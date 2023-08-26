@@ -110,6 +110,16 @@
 								</svg>
 							</a>
 						</li>
+						<li>
+							<a
+								href="mailto:akandeabdul@gmail.com"
+								rel="noreferrer"
+								target="_blank"
+								aria-label="link to email"
+								><img src="/dist/assets/Icon - Mail.png" alt="mail" class="mail"/> 
+							  
+							</a>
+						</li>
 					</ul>
 
 					<div class="hamburger">
@@ -410,7 +420,7 @@
 								<h3>05</h3>
 								<h2>Todo-List App</h2>
 								<p>
-									One of the ways to better manage Time and increase productivity is through Planning. Todo-List app is created just for this purpose. Tasks can be planned and track using this app. It also ensures that all changes made to the tasks are updated in real time and preserved.
+									One of the ways to better manage Time and increase productivity is through Planning. Todo-List app is created just for this purpose. Tasks can be planned and tracked using this app. It also ensures that all changes made to the tasks are updated in real time and preserved.
 								</p>
 								<ul class="tech-stack">
 									<li>HTML</li>
@@ -493,6 +503,7 @@
 
 			<!-- contact section -->
 			<section class="contact" data-aos="fade-up">
+				
 				<div class="container">
 					<p class="subtitle">Have a project? or just looking to hire?</p>
 					<h2 class="title">Let's Work Together</h2>
@@ -500,13 +511,39 @@
 						Feel free to reach out if you're looking to hire, just want to
 						connect or see if we can build something amazing together.
 					</p>
-
-					<div>
-						<a href="mailto:akandeabdul@gmail.com" class="mail-link hover-effect"
-							>Get in touch →</a
-						>
-						<!-- <small>(or copy) samwill300@gmail.com</small> -->
+					<form
+						class="form_details"
+						action="https://formspree.io/f/xoqzvwya"
+						method="POST"
+						id = "contact"
+						
+					  >
+						<input
+						  type="text"
+						  name="username"
+						  placeholder="Full name"
+						  maxlength="30"
+						  id="Fullname"
+						  required
+						/>
+				
+						<input type="email" name="email" id="email" placeholder="Email address" required />
+						<textarea
+						  name="message"
+						  cols="30"
+						  rows="10"
+						  maxlength="200"
+						  placeholder="Enter text here"
+						  id ="YourMessage"
+						  required
+						></textarea>
+				
+						<button class="btn hire-btn" type="submit" name="submit">Get in touch</button>
+					  </form>
 					</div>
+					<div>
+						
+					
 				</div>
 			</section>
 		</main>

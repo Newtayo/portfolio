@@ -91,6 +91,21 @@
 	  border-color: transparent;
 	}
   }
+  .mail{
+	width: 1.3vw;
+  }
+  .form_details {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+  }
+  .form_details > input{
+	border: solid 1px var(--accent-clr);
+	padding:1%;
+  }
+  .form_details > textarea{
+	border: solid 1px var(--accent-clr);
+  }
 /* Set core root defaults */
 @media screen and (prefers-reduced-motion: no-preference) {
 	html {
@@ -298,6 +313,7 @@ small {
 .nav {
 	width: 100%;
 	padding: 0 1rem;
+	position: sticky;
 }
 
 .nav .container {
@@ -309,6 +325,8 @@ small {
 	margin-block-start: 1.15rem;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
+	top: 0;
+	position: sticky;
 }
 
 .nav-logo h3 {
@@ -674,6 +692,7 @@ small {
 .contact {
 	margin-block-start: var(--section-mt);
 	padding: 4rem 1rem;
+	display: flex;
 }
 
 .mail-link {
