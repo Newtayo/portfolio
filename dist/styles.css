@@ -19,7 +19,11 @@
 	scrollbar-width: thin;
 	scrollbar-gutter: stable;
 }
-
+header{
+	position: sticky;
+	top: 0;
+	z-index:100;
+}
 /* style webkit browsers (chrome, edge) scrollbar */
 ::-webkit-scrollbar {
 	width: 8px;
@@ -300,6 +304,7 @@ small {
 	border-radius: 0 0 0.5rem 0.5rem;
 	font-size: 1.4rem;
 	transform: translateY(-200%);
+
 	transition: all 350ms ease-in;
 }
 
@@ -773,7 +778,7 @@ small {
 /* responsiveness */
 @media screen and (max-width: 50em) {
 	body::after {
-		position: absolute;
+		position: fixed;
 		content: '';
 		top: 0;
 		left: 0;
